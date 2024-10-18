@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #c79832;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+
+    color: mistyrose;
+
+}
+
+
+nav ul li a:hover {
+    color: #f7c08a; /* Change the text color on hover */
+}
+
+/* Optional: Adding an underline effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f7c08a;
+    transition: width 0.3s ease;
+}
+
+/* Make the underline expand on hover */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.find-table .btn {
+    background-color: #d4af37;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.find-table .btn:hover {
+    background-color: #c79832;
+}
+
+
+
+/*main-------*/
+.hero-section {
+    background-image: url('home.jpg'); /* Add the path to your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for darker overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-content h3 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    background-color: #d4af37;
+    color: #111;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content .btn:hover {
+    background-color: #c79832;
+}
+
+
+
+
+
+.menu-section {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background: #222;
+    border-radius: 8px;
+    margin: 20px;
+    width: 45%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.menu-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.menu-details h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-details p {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
+
+.price {
+    font-size: 20px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.tag {
+    background-color: #d4af37;
+    color: #111;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.tag.new {
+    background-color: #ff5656;
+}
+
+.opening-hours {
+    margin: 40px 0 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.opening-hours span {
+    color: #d4af37;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #111;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #c79832;
+}
+
+
+
+
+
+
+
+
+.chef-section {
+    background-color: #f9f9f9;
+    color: #111;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.chef-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.chef-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chef-item {
+    background: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chef-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chef-item img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.chef-item h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.chef-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
+.about-section {
+    position: relative;
+    background-image: url('path-to-about-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 800px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #f7c08a; /* Accent color for the title */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #100f0f;
+    margin-bottom: 20px;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+
+/* Find a Table Button */
+.find-table-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #f7c08a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Reservation Form */
+.reservation-form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #f7c08a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayami Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Vanga Sapadalam</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menus</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#our-chefs">Our Chefs</a></li>
+                </ul>
+            </nav>
+            <div class="find-table">
+                <a href="#reservation" id="findTableBtn" class="btn">Find a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h3>Traditional & Hygienic</h3>
+                <h1>For the love of delicious food</h1>
+                <p>Come with family & feel the joy of mouthwatering food</p>
+                <a href="#menu" class="btn">View Our Menu</a>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+    <section class="menu-section" id="menu">
+        <h2>Delicious Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="greaksalad.avif" alt="Greek Salad">
+                <div class="menu-details">
+                    <h3>Greek Salad <span class="tag seasonal">Seasonal</span></h3>
+                    <p>Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</p>
+                    <span class="price">$25.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Butternut Pumpkin.jpg" alt="Butternut Pumpkin">
+                <div class="menu-details">
+                    <h3>Butternut Pumpkin</h3>
+                    <p>Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                    <span class="price">$10.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Olivas Rellenas.webp" alt="Olivas Rellenas">
+                <div class="menu-details">
+                    <h3>Olivas Rellenas</h3>
+                    <p>Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.</p>
+                    <span class="price">$25.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Lasagne.jpeg" alt="Lasagne">
+                <div class="menu-details">
+                    <h3>Lasagne</h3>
+                    <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                    <span class="price">$40.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Tokusen Wagyu.jpg" alt="Tokusen Wagyu">
+                <div class="menu-details">
+                    <h3>Tokusen Wagyu <span class="tag new">New</span></h3>
+                    <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                    <span class="price">$39.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Opu Fish.webp" alt="Opu Fish">
+                <div class="menu-details">
+                    <h3>Opu Fish</h3>
+                    <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                    <span class="price">$49.00</span>
+                </div>
+            </div>
+        </div>
+        <p class="opening-hours">During winter daily from <span>7:00 pm to 9:00 pm</span></p>
+        <a href="#full-menu" class="btn">View All Menu</a>
+    </section>
+    
+
+
+    <section class="chef-section" id="our-chefs">
+        <h2>Meet Our Chefs</h2>
+        <div class="chef-container">
+            <div class="chef-item">
+                <img src="chef1.jpg" alt="Chef 1">
+                <h3>Pavithran</h3>
+                <p>With over 20 years of experience in gourmet cooking, Chef John brings his passion for culinary arts to every dish.</p>
+            </div>
+            <div class="chef-item">
+                <img src="chef2.jpg" alt="Chef 2">
+                <h3>Tani</h3>
+                <p>A master of fusion cuisine, Chef Jane creates dishes that blend flavors from around the world with a unique touch.</p>
+            </div>
+            <div class="chef-item">
+                <img src="chef3.jpg" alt="Chef 3">
+                <h3>Riyas</h3>
+                <p>Specializing in pastry and desserts, Chef Michael's creations are not only delicious but also visually stunning.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Find a Table Button 
+<button id="findTableBtn" class="find-table-btn">Find a Table</button>-->
+
+<!-- Find a Table Modal -->
+<div id="findTableModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Find a Table</h2>
+        <form class="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <section class="about-section" id="about-us">
+        <div class="about-overlay">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p style="color: white;">
+                    Welcome to our restaurant, where every dish is a celebration of flavor and tradition. We are dedicated to providing an exceptional dining experience with a blend of classic and contemporary cuisine.
+                </p>
+                <p style="color: white;">
+                    With a history of culinary excellence, we believe in the power of food to bring people together. Our chefs use only the freshest ingredients to create dishes that not only taste incredible but also tell a story.
+                </p>
+                <p>
+                   Copyright @ 2024 by Jayami.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Get elements
+const findTableBtn = document.getElementById('findTableBtn');
+const findTableModal = document.getElementById('findTableModal');
+const closeBtn = document.querySelector('.close-btn');
+
+// Open modal
+findTableBtn.addEventListener('click', () => {
+    findTableModal.style.display = 'flex';
+});
+
+// Close modal
+closeBtn.addEventListener('click', () => {
+    findTableModal.style.display = 'none';
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+    if (event.target === findTableModal) {
+        findTableModal.style.display = 'none';
+    }
+});
+
+    </script>
+</body>
+</html>
